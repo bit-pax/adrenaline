@@ -1,0 +1,66 @@
+.auth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth div:first-child {
+    width: 450px;
+
+    /* outline-style:solid;
+    outline-color:red;
+    outline-width: 1px; */
+}
+
+.auth card {
+    padding: 2.5rem;
+}
+
+/* Div will always distribute the available space between or around the flex items depending on how many children it has.
+(Makes it convenient for having left and right elements. Or left, middle, right elements.) */
+.auth card div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.auth h1 {
+    text-align: center;
+    padding: 0 0 1.5rem 0;
+}
+
+.auth h2 {
+    text-align: center;
+    /* padding: 1.5rem 0 0 0; */
+}
+
+.auth p {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.auth label {
+    display: inline-block;
+    padding: 1.5rem 0 0.5rem 0;
+    font-weight: 500;
+
+    user-select: none;
+}
+
+.auth a {
+    // display: inline-block;
+    padding: 1.5rem 0 0.5rem 0;
+    font-weight: 500;
+}
+
+.auth input:not([type=checkbox]) {
+    display: block;
+    width: 100%;
+}
+
+.auth button {
+    width: 100%;
+
+    margin: 1rem 0 0 0;
+}
+

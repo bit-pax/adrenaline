@@ -1,0 +1,65 @@
+input {
+    // padding: 0.5rem 0.75rem;
+    // height: 2.15rem;
+    height: 2.454rem;
+    line-height: normal;
+
+    border: 1px solid #e6e7e9;
+    border-radius: 4px;
+    
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #929DB5;
+}
+
+input:focus {
+    border-color: #90b5e2;
+    outline: 0;
+
+    box-shadow: 0 0 transparent, 0 0 0 0.25rem rgba(32, 107, 196, .25);
+}
+
+input[type="search"] {
+    background: url("../icons/search.svg") no-repeat;
+    background-color: #fff;
+    background-position: 0.5rem;
+    background-size: 1.25rem;
+    padding-left: 2.5rem;
+    padding-right: 0.5rem;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+input[type=checkbox] {
+    display: inline-block;
+
+    border-radius: 4px;
+
+    background-size: 1.25rem;
+    /* margin-top: 0; */
+
+    width: 1.25rem;
+    height: 1.25rem;
+    vertical-align: top;
+    appearance: none;
+    background-color: #ffffff;
+    background-position: center;
+}
+
+input[type=checkbox]:checked {
+    background-color: #206bc4;
+    background-image: url('../icons/check.svg');
+}
+
+input[type="submit"] {
+    border: 1px solid transparent;
+    outline: none;
+    box-shadow: none;
+}

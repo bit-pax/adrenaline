@@ -1,0 +1,1161 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Adrenaline.css Elements</title>
+        <meta name="description" content="Test page filled with common HTML elements to help you see how goblin.css works.">
+        <meta name="author" content="Howard Kim">
+
+        <link rel="stylesheet" href="css/adrenaline.css">
+        <link rel="stylesheet" href="prism/prism.css">
+    </head>
+
+    <body>
+
+        <nav>
+            <nav-box>
+                <!-- <ul>
+                    <li>
+                        <input id="hamburger" type="checkbox">
+                        <label for="hamburger"><h1>☰</h1></label>
+                    </li>
+                </ul> -->
+
+                <!-- <ul>
+                    <li>
+                        <h1>☰</h1>
+                    </li>
+                </ul> -->
+
+                <ul>
+                    <!-- <li><a href="#"><img style="width: 2.15rem; height: 2.15rem; margin-right: 0.5rem;" src="https://i.imgur.com/TQAOVkU.jpeg"></a></li> -->
+                    <!-- <li><a class="logo" style="background-image: url('https://i.imgur.com/TQAOVkU.jpeg');" href="#"></a></li> -->
+                    <li><h1 style="color: #206BC4;">Adrenaline</h1></li>
+
+                </ul>
+
+                <ul>
+                    <li><a href="#" class="btn-white">Login</a></li>
+                    <li><a href="#" class="btn-blue">Sign Up</a></li>
+                    <li><a class="profile" style="background-image: url('https://i.pravatar.cc/100');" href="#"></a></li>
+                </ul>
+            </nav-box>
+        </nav>
+
+        <nav class="menu">
+            <nav-box>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Layout</a></li>
+                    <li><a href="#">Components</a></li>
+                    <li><a href="templates.html">Templates</a>
+                        <ul>
+                            <li><a href="#">Button 2-1</a></li>
+                            <li><a href="#">Button 2-2</a></li>
+                            <li><a href="#">Button 2-3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">License</a></li>
+                </ul>
+                
+                <ul>
+                    <li><input id="search" type="search" value="" placeholder="Search…"></li>
+                </ul>
+            </nav-box>
+        </nav>
+
+        <header>
+            <div>
+                <h6>ABOUT</h6>
+                <h2>Adrenaline.css</h2>
+            </div>
+            <div>
+                <button class="btn-white">Download</button>
+                <button>Buy Forever License</button>
+            </div>
+        </header>
+
+        <section>
+            <grid>
+                <div col="1/1">
+                    <card>
+                        <h3>What is Adrenaline?</h3>
+
+                        <hr>
+
+                        <p>
+                            Adrenaline is a near classless CSS framework that lets you create websites blazingly fast with plain html. This results in shorter development times, smaller file sizes and faster downloads.
+                        </p>
+
+                        <p>
+                            Statistically, sites that have a 1 second load time have a 7% bounce rate. Sites lose an additional 10% of users for every second their page takes to load.
+                        </p>
+
+                        <p>
+                            It takes a lot of time tweaking around with CSS to create an optimized CSS framework. Tiny little details can be slightly off and you can spend hours just trying to figure out which part of the CSS is conflicting with each other. A lot of CSS frameworks require adding classes and even inline styling which requires a lot of manual labor and adds bloat. This results in larger file sizes and slower download times.
+                        </p>
+
+                        <p>
+                            Adrenaline takes care of all of this saving you countless hours of development time.
+                        </p>
+
+                        <p>
+                            Adrenaline is also fully responsive and the layout will automatically adapt to the screen width so it can be viewed on a variety of platforms like desktop, tablet, smartphones, etc.
+                        </p>
+
+                        <p>
+                            Adrenaline draws visual design inspiration from Bootstrap and Tabler.io. It offers a similar look and feel, but without the CSS classes. You can also easily customize Adrenaline to match your needs and preferences.
+                        </p>
+
+                        <p>
+                            Adrenaline is less than <span style="background: red;">5kb</span> in size gzipped, so it's extremely lightweight and loads lightning fast.
+                        </p>
+
+                        <p>
+                            This site you're viewing now is powered by Adrenaline. It's an example of what you can achieve with this framework with just plain HTML.
+                        </p>
+                    </card>
+                </div>
+            </grid>
+
+            <grid>
+                <div col="1/1">
+                    <card>
+                        <h3>Why does it exist?</h3>
+
+                        <hr>
+
+                        <p>
+                            As a full stack developer, I've experimented with a lot of classless css frameworks. However, I found that most of them are pretty basic and don't provide enough functionality. A lot of the time they will have buttons and forms but no layout control and no navbar. I wanted a fully responsive framework that could encompass the whole layout and allow me to write plain html to get a stunning website up and running fast. I've always loved how Bootstrap looked. I still remember the first time I saw it. I was a bit mesmerized but their html is cluttered with css classes.
+                        </p>
+
+                        <p><pre><code>The Programmers' Credo: we do things not because they are easy, but because we thought they were going to be easy.</code></pre></p>
+
+                        <p>
+                            My goal was to create a classless css framework that looks similar to Bootstrap without the class bloat. This results in smaller html files which reduces load times.
+                        </p>
+
+                        <p>
+                            I initially made Adrenaline to use it for a personal project I was working on. I spent considerably more time than I thought I would and some people were interested in using it as well. It just sort of gained a life of it's own over time.
+                        </p>
+                    </card>
+                </div>
+            </grid>
+        </section>
+
+        <section>
+            <grid>
+                <div col="1/1">
+                    <card>
+                        <h3>Comparison</h3>
+
+                        <hr>
+
+                        <p>Notice how much more concise Adrenaline is compared to other CSS framworks:</p>
+
+                        <grid>
+                            <div col="1/1">
+                                <h3>Bootstrap</h3>
+
+                                <p>
+                                    <script type="text/plain" class="language-markup">
+                                        <div class="form-outline" data-mdb-input-init>
+                                            <input type="email" id="email" class="form-control" />
+                                            <label class="form-label" for="email">your@email.com</label>
+                                        </div>
+                                    </script>
+                                </p>
+                            </div>
+
+                            <div col="1/1">
+                                <h3>Tailwind</h3>
+
+                                <p>
+                                    <script type="text/plain" class="language-markup">
+                                        <input type="email" id="email" placeholder="your@email.com" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" />
+                                    </script>
+                                </p>
+                            </div>
+
+                            <div col="1/1">
+                                <h3>Adrenaline</h3>
+
+                                <p>
+                                    <script type="text/plain" class="language-markup">
+                                        <input type="email" id="email" placeholder="your@email.com" />
+                                    </script>
+                                </p>
+                            </div>
+                        </grid>
+                        
+                    </card>
+                </div>
+            </grid>
+        </section>
+
+        <section>
+            <grid>
+                <div col="1/1">
+                    <card>
+                        <h3>How to install</h3>
+
+                        <hr>
+
+                        <p>
+                            Download adrenaline.min.css
+                        </p>
+                    </card>
+                </div>
+            </grid>
+        </section>
+
+        <header>
+            <div>
+                <h6>LAYOUT</h6>
+                <h2>General</h2>
+            </div>
+        </header>
+
+        <section>
+            <grid>
+                <div col="1/1">
+                    <card>
+                        <h3>General Layout</h3>
+
+                        <hr>
+
+                        <p>Adrenaline uses a basic format that looks like the following:</p>
+
+                        <p>
+                            <script type="text/plain" class="language-markup">
+                                <!-- general html layout overview -->
+                                
+                                <!-- navigation -->
+                                <nav> ... </nav>
+
+                                <!-- title -->
+                                <header> ... </header>
+
+                                <!-- contents -->
+                                <section> ... </section>
+                            </script>
+                        </p>
+                    </card>
+                </div>
+            </grid>
+
+            <grid>
+                <div col="1/1">
+                    <card>
+                        <h3>Navigation</h3>
+
+                        <hr>
+
+                        <p>Adrenaline uses Flexbox to automatically space elements in <code>&lt;nav&gt;</code> and <code>&lt;header&gt;</code> so it's easy to left, right, and center align elements based off of the order of the html.</p>
+
+                        <p>
+                            <script type="text/plain" class="language-markup">
+                                <!-- left align only -->
+                                <nav> 
+                                    <ul> ... </ul> <!-- a single <ul> element will always be left aligned -->
+                                </nav>
+                            </script>
+                        </p>
+
+                        <p>
+                            <script type="text/plain" class="language-markup">
+                                <!-- left and right align -->
+                                <nav> 
+                                    <ul> ... </ul> <!-- first <ul> will be left aligned -->
+                                    <ul> ... </ul> <!-- second <ul> will be right aligned -->
+                                </nav>
+                            </script>
+                        </p>
+
+                        <p>
+                            <script type="text/plain" class="language-markup">
+                                <!-- left, center, and right align -->
+                                <nav> 
+                                    <ul> ... </ul> <!-- first <ul> will be left aligned -->
+                                    <ul> ... </ul> <!-- second <ul> will be center aligned -->
+                                    <ul> ... </ul> <!-- third <ul> will be right aligned -->
+                                </nav>
+                            </script>
+                        </p>
+                            
+                        <p>
+                            Note: you can add as many <code>&lt;ul&gt;</code> elements as you want to <code>&lt;nav&gt;</code> and they will be spaced automatically.
+                        </p>
+                    </card>
+                </div>
+            </grid>
+
+            <grid>
+                <div col="1/1">
+                    <card>
+                        <h3>Header</h3>
+
+                        <hr>
+
+                        <p>
+                            <code>&lt;header&gt;</code> uses a similar approach to <code>&lt;nav&gt;</code> but with <code>&lt;div&gt;</code> elements.
+                        </p>
+
+                        <p>
+                            <script type="text/plain" class="language-markup">
+                                <!-- left align only -->
+                                <header> 
+                                    <div> ... </div> <!-- a single <div> element will always be left aligned -->
+                                </header>
+                            </script>
+                        </p>
+
+                        <p>
+                            <script type="text/plain" class="language-markup">
+                                <!-- left and right align -->
+                                <header> 
+                                    <div> ... </div> <!-- first <div> will be left aligned -->
+                                    <div> ... </div> <!-- second <div> will be right aligned -->
+                                </header>
+                            </script>
+                        </p>
+
+                        <p>
+                            <script type="text/plain" class="language-markup">
+                                <!-- left, center, and right align -->
+                                <header> 
+                                    <div> ... </div> <!-- first <div> will be left aligned -->
+                                    <div> ... </div> <!-- second <div> will be center aligned -->
+                                    <div> ... </div> <!-- third <div> will be right aligned -->
+                                </header>
+                            </script>
+                        </p>
+
+                        <p>
+                            Note: you can add as many <code>&lt;div&gt;</code> elements as you want to the <code>&lt;header&gt;</code> and they will be spaced automatically.
+                        </p>
+                    </card>
+                </div>
+            </grid>
+
+            <grid>
+                <div col="1/1">
+                    <card>
+                        <h3>Section</h3>
+
+                        <hr>
+
+                        <p>
+                            The <code>&lt;section&gt;</code> element is useful for creating a container for content. Sections are horizontally centered and have a <code>max-width</code> (default is 80rem) and will automatically adjust to smaller screen sizes. You can also add <code>&lt;grid&gt;</code> elements to a <code>&lt;section&gt;</code> to easily add columns.
+                        </p>
+
+                        <p>
+                            <script type="text/plain" class="language-markup">
+                                <!-- basic single column layout -->
+                                <section> 
+                                    <grid>
+                                        <div col="1/1"> ... </div>
+                                    </grid>
+                                </section>
+                            </script>
+                        </p>
+
+                        <p>
+                            <script type="text/plain" class="language-markup">
+                                <!-- easily add responsive columns using <grid> -->
+                                <section> 
+                                    <grid>
+                                        <div col="1/3"> ... </div>
+                                        <div col="1/3"> ... </div>
+                                        <div col="1/3"> ... </div>
+                                    </grid>
+                                </section>
+                            </script>
+                        </p>
+                    </card>
+                </div>
+            </grid>
+        </section>
+
+
+
+
+
+
+
+
+
+
+        <header>
+            <div>
+                <h6>COMPONENTS</h6>
+                <h2>Responsive Grid</h2>
+            </div>
+        </header>
+
+        <section>
+            <grid>
+                <div col="1/1">
+                    <card>
+                        <h3>Grid</h3>
+
+                        <hr>
+
+                        <p>
+                            The <code>&lt;grid&gt;</code> element is makes it extremely easy to use and is fully responsive by default and can easily be adjusted for different screen resolutions. Just add some divs with the <code>col</code> attribute and you're good to go. You can also embed <code>&lt;grid&gt;</code> elements within <code>&lt;grid&gt;</code> elements for more complex layouts as well.
+                        </p>
+
+                        <p>
+                            Note: Column widths are expressed in fractions for easy usage. Examples: <code>1/1</code>, <code>1/3</code> etc.
+                        </p>
+                    </card>
+                </div>
+            </grid>
+        </section>
+
+        <section>
+            <grid>
+                <div col="1/5"><card><p style="text-align: center;"> 1/5 </p></card></div>
+                <div col="1/5"><card><p style="text-align: center;"> 1/5 </p></card></div>
+                <div col="1/5"><card><p style="text-align: center;"> 1/5 </p></card></div>
+                <div col="1/5"><card><p style="text-align: center;"> 1/5 </p></card></div>
+                <div col="1/5"><card><p style="text-align: center;"> 1/5 </p></card></div>
+            </grid>
+
+            <grid>
+                <div col="1/4"><card><p style="text-align: center;"> 1/4 </p></card></div>
+                <div col="1/4"><card><p style="text-align: center;"> 1/4 </p></card></div>
+                <div col="1/4"><card><p style="text-align: center;"> 1/4 </p></card></div>
+                <div col="1/4"><card><p style="text-align: center;"> 1/4 </p></card></div>
+            </grid>
+
+            <grid>
+                <div col="1/3"><card><p style="text-align: center;"> 1/3 </p></card></div>
+                <div col="1/3"><card><p style="text-align: center;"> 1/3 </p></card></div>
+                <div col="1/3"><card><p style="text-align: center;"> 1/3 </p></card></div>
+            </grid>
+
+            <grid>
+                <div col="1/2"><card><p style="text-align: center;"> 1/2 </p></card></div>
+                <div col="1/2"><card><p style="text-align: center;"> 1/2 </p></card></div>
+            </grid>
+
+            <grid>
+                <div col="1/1"><card><p style="text-align: center;"> 1/1 </p></card></div>
+            </grid>
+        </section>
+
+        <section>
+            <grid>
+                <div col="1/1">
+                    <card>
+                        <p>
+                            <script type="text/plain" class="language-markup">
+                                <!-- basic single column layout -->
+                                <section> 
+                                    <grid>
+                                        <div col="1/1"> ... </div>
+                                    </grid>
+                                </section>
+                            </script>
+                        </p>
+
+                        <p>
+                            <script type="text/plain" class="language-markup">
+                                <!-- easily add responsive columns using <grid> -->
+                                <section> 
+                                    <grid>
+                                        <div col="1/3"> ... </div>
+                                        <div col="1/3"> ... </div>
+                                        <div col="1/3"> ... </div>
+                                    </grid>
+                                </section>
+                            </script>
+                        </p>
+
+                        <p>
+                            <script type="text/plain" class="language-markup">
+                                <!-- example with title and content format -->
+                                <section>
+                                    <grid>
+                                        <div col="1/1">
+                                            <h3>Title</h3>
+                                            <p> ... </p>
+                                        </div>
+                                    </grid>
+                                </section>
+                            </script>
+                        </p>
+
+                        <p>
+                            <script type="text/plain" class="language-markup">
+                                <!-- grid with cards -->
+                                <section>
+                                    <grid>
+                                        <div col="1/2">
+                                            <card>
+                                                <h3>1 of 2</h3>
+                                                <p> ... </p>
+                                            </card>
+                                        </div>
+                                    
+                                        <div col="1/2">
+                                            <card>
+                                                <h3>2 of 2</h3>
+                                                <p> ... </p>
+                                            </card>
+                                        </div>
+                                    </grid>
+                                </section>
+                            </script>
+                        </p>
+                    </card>
+                </div>
+            </grid>
+        </section>
+    
+        <header>
+            <div>
+                <h6>COMPONENTS</h6>
+                <h2>Cards With Images</h2>
+            </div>
+        </header>
+
+        <section>
+            <grid>
+                <div col="1/4">
+                    <card>
+                        <img src="img/pexels-tom-swinnen-2347462.jpg" alt="sign">
+                        <h3>Top Image</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                    </card>
+                </div>
+                <!-- image in the middle -->
+                <div col="1/4">
+                    <card>
+                        <h3>Middle Image</h3>
+                        <img src="img/pexels-jack-bulmer-2662434.jpg" alt="sign">
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                    </card>
+                </div>
+                <div col="1/4">
+                    <card>
+                        <h3>Bottom Image</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+                        <img src="img/pexels-adrian-lang-2414442.jpg" alt="sign">
+                    </card>
+                </div>
+                <div col="1/4">
+                    <card>
+                        <img src="img/pexels-nick-wehrli-5282269.jpg" alt="sign">
+                    </card>
+
+                    <p>Image Only</p>
+                </div>
+            </grid>
+
+        </section>
+        
+        <section>
+            <grid>
+                <div col="1/1">
+                    <card>
+                        <p>
+                            <script type="text/plain" class="language-markup">
+                                <!-- card image at the top -->
+                                <card>
+                                    <img src="img/image.jpg">
+
+                                    <h3>Top Image</h3>
+
+                                    <p>Content goes here</p>
+                                </card>
+                            </script>
+                        </p>
+
+                        <p>
+                            <script type="text/plain" class="language-markup">
+                                <!-- card image in the middle -->
+                                <card>
+                                    <h3>Middle Image</h3>
+
+                                    <img src="img/image.jpg">
+
+                                    <p>Content goes here</p>
+                                </card>
+                            </script>
+                        </p>
+
+                        <p>
+                            <script type="text/plain" class="language-markup">
+                                <!-- card image at the bottom -->
+                                <card>
+                                    <h3>Bottom Image</h3>
+
+                                    <p>Content goes here</p>
+
+                                    <img src="img/image.jpg">
+                                </card>
+                            </script>
+                        </p>
+
+                        <p>
+                            <script type="text/plain" class="language-markup">
+                                <!-- card image only -->
+                                <card>
+                                    <img src="img/image.jpg">
+                                </card>
+                            </script>
+                        </p>
+                    </card>
+                </div>
+            </grid>
+        </section>
+
+
+
+
+
+
+
+
+       
+
+        
+
+        <header>
+            <div>
+                <h6>COMPONENTS</h6>
+                <h2>Code</h2>
+            </div>
+        </header>
+
+        <section>
+            <grid>
+                <div col="1/1">
+                    <card>
+                        <h3>Code</h3>
+
+                        <hr>
+
+                        <p>The <code>&lt;code&gt;</code> element functionality has been kept basic as you'll most likely be using something like PrismJS for syntax highlighting and code escaping.</p>
+
+                        <p>Here is some <code>inline</code> code.</p>
+
+                        <!--
+                        <header>
+                            <div><h3>Inline Code HTML:</h3></div>
+                            <div><button>Copy To Clipboard</button></div>
+                        </header>
+                        -->
+
+                        <p>
+                            <script type="text/plain" class="language-markup">
+                                <code>code</code>
+                            </script>
+                        </p>
+
+                        <p>
+                            <script type="text/plain" class="language-markup">
+                                <pre><code>code block</code></pre>
+                            </script>
+                        </p>
+                    </card>
+                </div>
+            </grid>
+        </section>
+
+        <header>
+            <div>
+                <h6>COMPONENTS</h6>
+                <h2>Typography</h2>
+            </div>
+        </header>
+
+        <section>
+            <grid>
+                <div col="1/1">
+                    <card>
+                        <h3>Typography</h3>
+
+                        <hr>
+
+                        <p>
+                            <h1>Heading level 1</h1>
+                            <h2>Heading level 2</h2>
+                            <h3>Heading level 3</h3>
+                            <h4>Heading level 4</h4>
+                            <h5>Heading level 5</h5>
+                            <h6>Heading level 6</h6>
+                        </p>
+
+                        <p>
+                            <script type="text/plain" class="language-markup">
+                                <h1>Heading level 1</h1>
+                                <h2>Heading level 2</h2>
+                                <h3>Heading level 3</h3>
+                                <h4>Heading level 4</h4>
+                                <h5>Heading level 5</h5>
+                                <h6>Heading level 6</h6>
+                            </script>
+                        </p>
+
+                        <p>
+                            General Content Text
+                        </p>
+
+                        <p>
+                            <script type="text/plain" class="language-markup">
+                                <p>
+                                    General Content Text
+                                </p>
+                            </script>
+                        </p>
+                    </card>
+                </div>
+            </grid>
+        </section>
+
+        <header>
+            <div>
+                <h6>COMPONENTS</h6>
+                <h2>Buttons</h2>
+            </div>
+        </header>
+
+        <section>
+            <grid>
+                <div col="1/1">
+                    <card>
+                        <h3>Primary Button</h3>
+
+                        <hr>
+
+                        <p>
+                            <!-- primary button -->
+                            <button>Primary Button</button>
+
+                            <!-- primary button (disabled) -->
+                            <button disabled>Disabled Primary Button</button>
+                        </p>
+                        
+                        <p>
+                            <script type="text/plain" class="language-markup">
+                                <!-- primary button -->
+                                <button>Primary Button</button>
+
+                                <!-- primary button (disabled) -->
+                                <button disabled>Disabled Primary Button</button>
+                            </script>
+                        </p>
+                    </card>
+                </div>
+            </grid>
+        
+            <grid>
+                <div col="1/1">
+                    <card>
+                        <h3>Default Button</h3>
+
+                        <hr>
+
+                        <p>
+                            <!-- default button -->
+                            <button class="btn-white">Default Button</button>
+
+                            <!-- default button disabled-->
+                            <button class="btn-white" disabled>Disabled Default Button</button>
+                        </p>
+                        
+                        <p>
+                            <script type="text/plain" class="language-markup">
+                                <!-- default button -->
+                                <button class="btn-white">Default Button</button>
+
+                                <!-- default button disabled-->
+                                <button class="btn-white" disabled>Disabled Default Button</button>
+                            </script>
+                        </p>
+                    </card>
+                </div>
+            </grid>
+        
+            <grid>
+                <div col="1/1">
+                    <card>
+                        <h3>Hyperlinks</h3>
+
+                        <hr>
+
+                        <p>
+                            <!-- blue hyperlink button -->
+                            <a class="btn-blue">Blue Hyperlink Button</a>
+
+                            <!-- white hyperlink button -->
+                            <a class="btn-white">White Hyperlink Button</a>
+
+                            <!-- default hyperlink -->
+                            <a href="#">Default Hyperlink Text</a>
+                        </p>
+
+                        <p>
+                            <script type="text/plain" class="language-markup">
+                                <!-- blue hyperlink button -->
+                                <a class="btn-blue">Blue Hyperlink Button</a>
+
+                                <!-- white hyperlink button -->
+                                <a class="btn-white">White Hyperlink Button</a>
+                                
+                                <!-- default hyperlink -->
+                                <a href="#">Default Hyperlink Text</a>
+                            </script>
+                        </p>
+                    </card>
+                </div>
+            </grid>
+        </section>
+
+        <header>
+            <div>
+                <h6>COMPONENTS</h6>
+                <h2>Form Elements</h2>
+            </div>
+        </header>
+
+        <section>
+            <grid>
+                <div col="1/1">
+                    <card>
+                        <h3>Basic Form Elements</h3>
+
+                        <hr>
+
+                        <p>
+                            <label>Label</label>
+                        </p>
+
+                        <p>
+                            <input type="email" value="" required />
+                        </p>
+
+                        <p>
+                            <input id="password" type="password" name="password" required />
+                        </p>
+
+                        <p>
+                            <label>
+                                <input type="checkbox" name="remember">
+                                <span>Checkbox</span>
+                            </label>
+                        </p>
+
+                        <p>
+                            <button class="btn-blue" type="submit">Submit</button>
+                        </p>
+
+                        <p>
+                            <script type="text/plain" class="language-markup">
+                                <!-- basic label -->
+                                <label>Label</label>
+
+                                <!-- basic email input -->
+                                <input type="email" value="" required />
+
+                                <!-- basic password input -->
+                                <input id="password" type="password" name="password" required />
+
+                                <!-- basic checkbox -->
+                                <label>
+                                    <input type="checkbox" name="remember">
+                                    <span>Checkbox</span>
+                                </label>
+
+                                <!-- basic submit -->
+                                <button class="btn-blue" type="submit">Submit</button>
+                            </script>
+                        </p>
+                    </card>
+                </div>
+            </grid>
+        </section>
+
+        <header>
+            <div>
+                <h6>TEMPLATES</h6>
+                <h2>Authentication</h2>
+            </div>
+        </header>
+
+        <section>
+            <grid class="auth">
+                <div col="1/1">
+                    <h1>Adrenaline</h1>
+
+                    <card>
+                        <h2>Login to your account</h2>
+
+                        <form method="POST" action="#">
+                            <label>Email Address</label>
+                            <input type="email" name="email" placeholder="your@email.com" required />
+                    
+                            <div>
+                                <label>Password</label>
+                                <a href="#">Forgot password</a>
+                            </div>
+                            <input type="password" name="password" placeholder="Your password" required />
+                    
+                            <label>
+                                <input type="checkbox" name="remember">
+                                <span>Remember me</span>
+                            </label>
+                        
+                            <button class="btn-blue" type="submit">Sign In</button>
+                        </form>
+                    </card>
+                    
+                    <p>
+                        Don't have an account yet? <a href="">Sign Up</a>
+                    </p>
+                </div>
+            </grid>
+        </section>
+
+        <section>
+            <grid>
+                <div col="1/1">
+                    <card>
+                        <h3>Sign In</h3>
+
+                        <hr>
+
+                        <grid>
+                            <div col="1/1">
+                                <p>
+                                    <script type="text/plain" class="language-markup">
+                                        <section>
+                                            <grid class="auth">
+                                                <div col="1/1">
+                                                    <h1>Adrenaline</h1>
+
+                                                    <card>
+                                                        <h2>Login to your account</h2>
+
+                                                        <form method="POST" action="#">
+                                                            <label>Email Address</label>
+                                                            <input type="email" name="email" placeholder="your@email.com" required />
+                                                    
+                                                            <div>
+                                                                <label>Password</label>
+                                                                <a href="#">Forgot password</a>
+                                                            </div>
+                                                            <input type="password" name="password" placeholder="Your password" required />
+                                                    
+                                                            <label>
+                                                                <input type="checkbox" name="remember">
+                                                                <span>Remember me</span>
+                                                            </label>
+                                                        
+                                                            <button class="btn-blue" type="submit">Sign In</button>
+                                                        </form>
+                                                    </card>
+                                                    
+                                                    <p>
+                                                        Don't have an account yet? <a href="">Sign Up</a>
+                                                    </p>
+                                                </div>
+                                            </grid>
+                                        </section>
+                                    </script>
+                                </p>
+                            </div>
+                        </grid>
+
+                    </card>
+                </div>
+            </grid>
+        </section>
+
+        <section>
+            <grid class="auth">
+                <div col="1/1">
+                    <h1>Adrenaline</h1>
+
+                    <card>
+                        <h2>Create new account</h2>
+
+                        <form method="POST" action="#">
+
+                            <label>Name</label>
+                            <input id="name" type="text" name="name" value="" required autofocus autocomplete="name" />
+                        
+                            <label>Email Address</label>
+                            <input id="email" type="email" name="email" value="" required autocomplete="email" />
+                    
+                            <label>Password</label>
+                            <input id="password" type="password" name="password" required />
+
+                            <label>Confirm Password</label>
+                            <input id="confirm" type="password" name="confirm" required />
+
+                            <label>
+                                <input type="checkbox" name="agree">
+                                <span>Agree to <a href="">terms and policy</a></span>
+                            </label>
+                        
+                            <button class="btn-blue" type="submit">Create New Account</button>
+                        </form>
+                    </card>
+
+                    <p>
+                        Already have an account? <a href="#">Sign In</a>
+                    </p>
+                </div>
+            </grid>
+        </section>
+
+        <section>
+            <grid>
+                <div col="1/1">
+                    <card>
+                        <h3>Create New Account</h3>
+
+                        <hr>
+
+                        <grid>
+                            <div col="1/1">
+                                <p>
+                                    <script type="text/plain" class="language-markup">
+                                        <section>
+                                            <grid class="auth">
+                                                <div col="1/1">
+                                                    <h1>Adrenaline</h1>
+
+                                                    <card>
+                                                        <h2>Create new account</h2>
+
+                                                        <form method="POST" action="#">
+
+                                                            <label>Name</label>
+                                                            <input type="text" name="name" value="" required autofocus autocomplete="name" />
+                                                        
+                                                            <label>Email Address</label>
+                                                            <input type="email" name="email" value="" required autocomplete="email" />
+                                                    
+                                                            <label>Password</label>
+                                                            <input type="password" name="password" required />
+                                
+                                                            <label>Confirm Password</label>
+                                                            <input type="password" name="confirm" required />
+                                
+                                                            <label>
+                                                                <input type="checkbox" name="agree">
+                                                                <span>Agree to <a href="">terms and policy</a></span>
+                                                            </label>
+                                                        
+                                                            <button class="btn-blue" type="submit">Create New Account</button>
+                                                        </form>
+                                                    </card>
+
+                                                    <p>
+                                                        Already have an account? <a href="#">Sign In</a>
+                                                    </p>
+                                                </div>
+                                            </grid>
+                                        </section>
+                                    </script>
+                                </p>
+                            </div>
+                        </grid>
+
+                    </card>
+                </div>
+            </grid>
+        </section>
+
+
+        <!-- <header>
+            <div>
+                <h6>CLASSES</h6>
+                <h2>Classes</h2>
+            </div>
+        </header>
+
+        <section>
+            <grid>
+                <div col="1/1">
+                    <card>
+                        <h3>Classes</h3>
+                        <p>
+                            
+                        </p>
+                    </card>
+                </div>
+            </grid>
+        </section> -->
+
+
+
+<!-- 
+        <header>
+            <div>
+                <h6>TEMPLATES</h6>
+                <h2>Login</h2>
+            </div>
+        </header>
+
+        <section>
+            <grid>
+                <div col="1/1">
+                    <card>
+                        <h3>Login</h3>
+                        <p>
+                            
+                        </p>
+                    </card>
+                </div>
+            </grid>
+        </section> -->
+
+
+
+
+
+
+<!-- 
+        <header>
+            <h2>Purchase</h2>
+        </header>
+
+        <section>
+            <grid>
+                <div col="1/1">
+                    <card>
+                        <h3>Purchase</h3>
+                        <p>Buy a license and get free updates forever. You also get access to the source LESS css files and all templates to easily copy and paste.</p>
+                    </card>
+                </div>
+            </grid>
+        </section>
+ -->
+
+
+
+
+
+
+        
+
+        
+
+        <footer>
+            <section>
+                <p>Copyright © 2023 Adrenaline. All rights reserved.</p>
+            </section>
+        </footer>
+
+        <script src="prism/prism.js"></script>
+    </body>
+</html>

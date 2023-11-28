@@ -1,0 +1,44 @@
+Running less compiler
+
+	1. Open Windows PowerShell and type the following to enter the Linux environment:
+
+		wsl
+		
+	1. Make sure LESS is installed (skip if already installed):
+	
+		sudo npm install -g less
+		
+-------------------------------------------------------------------------------------------------------------------------
+
+Running less-watch-compiler (it will keep an eye on your .less files. If there are any changes it will auto compile)
+
+	Note: less compiler and less-watch-compiler are two different programs.
+
+	https://github.com/jonycheung/deadsimple-less-watch-compiler
+
+	0. Open Windows PowerShell and type the following to enter the Linux environment:
+
+		wsl
+		
+	1. Make sure less-watch-compiler is installed (skip if already installed):
+	
+		sudo npm install -g less-watch-compiler
+		
+	2. Have a configuration file with the following:
+	
+		less-watch-compiler.config.json:
+		
+			{
+				"watchFolder": "less",
+				"outputFolder": "css",
+				"mainFile": "goblin.less",
+				"includeHidden": true
+			}
+			
+		Note: When includeHidden is set to true, it will not ignore files that also begin with a '.' or a '_'
+		
+	3. Run build.sh by typing:
+	
+		less-watch-compiler
+		
+-------------------------------------------------------------------------------------------------------------------------

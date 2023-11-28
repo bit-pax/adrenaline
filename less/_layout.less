@@ -1,0 +1,45 @@
+img {
+	height: auto;
+	max-width: 100%;
+}
+
+section {
+	margin: 0 auto;
+	padding: 0 1rem;
+	width: 100%;
+    max-width: 80rem;
+}
+
+p {
+	margin: 0 0 1rem;
+	
+	&:last-child { margin: 0 }
+}
+
+// Header will always distribute the available space between or around the flex items depending on how many children it has.
+// (Makes it convenient for having left and right elements. Or left, middle, right elements.)
+header {
+	max-width: 80rem;
+
+	margin: 0 auto;
+	margin-top: 1.75rem;
+	margin-bottom: 1rem;
+	padding: 0 1.5rem;
+
+	font-size: 0;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header div:not(:only-of-type):last-child * {
+    margin-left: 0.5rem;
+
+    // background-color: red;
+}
+
+section header {
+	margin-top: 0;
+	padding: 0;
+}
