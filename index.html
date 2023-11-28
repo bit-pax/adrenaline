@@ -48,17 +48,18 @@
         <nav class="menu">
             <nav-box>
                 <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Layout</a></li>
-                    <li><a href="#">Components</a></li>
-                    <li><a href="templates.html">Templates</a>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#layout">Layout</a></li>
+                    <li><a href="#components">Components</a></li>
+                    <li><a href="#templates">Templates</a>
                         <ul>
-                            <li><a href="#">Button 2-1</a></li>
-                            <li><a href="#">Button 2-2</a></li>
-                            <li><a href="#">Button 2-3</a></li>
+                            <li><a href="#templates">Sign In</a></li>
+                            <li><a href="#createnewaccount">Create New Account</a></li>
+                            <li><a href="#forgot">Forgot Password</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">License</a></li>
+                    <li><a href="#classes">Classes</a></li>
+                    <li><a href="#buy">Buy</a></li>
                 </ul>
                 
                 <ul>
@@ -69,13 +70,13 @@
 
         <header>
             <div>
-                <h6>ABOUT</h6>
+                <h6 id="about">ABOUT</h6>
                 <h2>Adrenaline.css</h2>
             </div>
             <div>
                 <!-- <button class="btn-white">Download</button> -->
                 <a href="css/adrenaline.min.css" class="btn-white" download>Download</a>
-                <button>Buy Forever License</button>
+                <a href="#buy" class="btn-blue">Buy Forever License</a>
             </div>
         </header>
 
@@ -201,13 +202,22 @@
             <grid>
                 <div col="1/1">
                     <card>
-                        <h3>Download Adrenaline</h3>
+                        <h3>How To Install Adrenaline</h3>
 
                         <hr>
 
                         <p>
-                            <a href="css/adrenaline.min.css" class="btn-blue" download>Download adrenaline.min.css</a>
+                            Download Adrenaline <a href="css/adrenaline.min.css" download>HERE</a> and link <code>css/adrenaline.min.css</code> in the <code>&lt;head&gt;</code> of your website. That's pretty much it.
                         </p>
+
+                        <script type="text/plain" class="language-markup">
+                            <head>
+
+                                ...
+
+                                <link rel="stylesheet" href="css/adrenaline.min.css">
+                            </head>
+                        </script>
                     </card>
                 </div>
             </grid>
@@ -215,7 +225,7 @@
 
         <header>
             <div>
-                <h6>LAYOUT</h6>
+                <h6 id="layout">LAYOUT</h6>
                 <h2>General</h2>
             </div>
         </header>
@@ -392,7 +402,7 @@
 
         <header>
             <div>
-                <h6>COMPONENTS</h6>
+                <h6 id="components">COMPONENTS</h6>
                 <h2>Responsive Grid</h2>
             </div>
         </header>
@@ -520,7 +530,7 @@
     
         <header>
             <div>
-                <h6>COMPONENTS</h6>
+                <h6 id="components">COMPONENTS</h6>
                 <h2>Cards With Images</h2>
             </div>
         </header>
@@ -885,7 +895,7 @@
 
         <header>
             <div>
-                <h6>TEMPLATES</h6>
+                <h6 id="templates">TEMPLATES</h6>
                 <h2>Authentication - Sign In</h2>
             </div>
         </header>
@@ -981,7 +991,7 @@
 
         <header>
             <div>
-                <h6>TEMPLATES</h6>
+                <h6 id="createnewaccount">TEMPLATES</h6>
                 <h2>Authentication - Create New Account</h2>
             </div>
         </header>
@@ -1083,11 +1093,92 @@
             </grid>
         </section>
 
-
-        <!-- <header>
+        <header>
             <div>
-                <h6>CLASSES</h6>
-                <h2>Classes</h2>
+                <h6 id="forgot">TEMPLATES</h6>
+                <h2>Authentication - Forgot Password</h2>
+            </div>
+        </header>
+
+        <section>
+            <grid class="auth">
+                <div col="1/1">
+                    <h1>Adrenaline</h1>
+
+                    <card>
+                        <h2>Forgot Password</h2>
+
+                        <p>
+                            Enter your email address for a password reset link.
+                        </p>
+
+                        <form method="POST" action="#">
+                            <label>Email Address</label>
+                            <input type="email" name="email" value="" placeholder="Enter email" required autocomplete="email" />
+                        
+                            <button class="btn-blue" type="submit">Password Reset</button>
+                        </form>
+                    </card>
+
+                    <p>
+                        Forget it, <a href="#">send me back</a> to the sign in screen.
+                    </p>
+                </div>
+            </grid>
+        </section>
+
+        <section>
+            <grid>
+                <div col="1/1">
+                    <card>
+                        <h3>Forgot Password</h3>
+
+                        <hr>
+
+                        <grid>
+                            <div col="1/1">
+                                <p>
+                                    <script type="text/plain" class="language-markup">
+                                        <section>
+                                            <grid class="auth">
+                                                <div col="1/1">
+                                                    <h1>Adrenaline</h1>
+
+                                                    <card>
+                                                        <h2>Forgot Password</h2>
+
+                                                        <p>
+                                                            Enter your email address for a password reset link.
+                                                        </p>
+
+                                                        <form method="POST" action="#">
+                                                            <label>Email Address</label>
+                                                            <input type="email" name="email" value="" placeholder="Enter email" required autocomplete="email" />
+                                                        
+                                                            <button class="btn-blue" type="submit">Password Reset</button>
+                                                        </form>
+                                                    </card>
+
+                                                    <p>
+                                                        Forget it, <a href="#">send me back</a> to the sign in screen.
+                                                    </p>
+                                                </div>
+                                            </grid>
+                                        </section>
+                                    </script>
+                                </p>
+                            </div>
+                        </grid>
+
+                    </card>
+                </div>
+            </grid>
+        </section>
+
+
+        <header>
+            <div>
+                <h2 id="classes">Classes</h2>
             </div>
         </header>
 
@@ -1096,21 +1187,42 @@
                 <div col="1/1">
                     <card>
                         <h3>Classes</h3>
+
+                        <hr>
+
                         <p>
-                            
+                            Adrenaline has the following optional classes:
+                        </p>
+                        
+                        <p>
+                            <script type="text/plain" class="language-markup">
+                                <!-- used for the navbar menu -->
+                                .menu
+
+                                <!-- used for the navbar menu logo -->
+                                .logo
+
+                                <!-- used for the navbar menu profile image -->
+                                .profile
+                                
+                                <!-- used for automatically styling Sign In, Sign Up, Forgot Password pages -->
+                                .auth
+
+                                <!-- used to make a blue primary button -->
+                                .btn-blue
+
+                                <!-- used to make a default white button -->
+                                .btn-white
+                            </script>
                         </p>
                     </card>
                 </div>
             </grid>
-        </section> -->
+        </section>
 
-
-
-<!-- 
         <header>
             <div>
-                <h6>TEMPLATES</h6>
-                <h2>Login</h2>
+                <h2 id="buy">Buy Forever License</h2>
             </div>
         </header>
 
@@ -1118,14 +1230,13 @@
             <grid>
                 <div col="1/1">
                     <card>
-                        <h3>Login</h3>
                         <p>
-                            
+                            License Terms
                         </p>
                     </card>
                 </div>
             </grid>
-        </section> -->
+        </section>
 
 
 
