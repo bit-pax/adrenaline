@@ -599,6 +599,7 @@ nav ul:not(:only-of-type):last-child li {
   padding-left: 0.5rem;
 }
 #hamburger {
+  color: #206BC4;
   cursor: pointer;
 }
 /* custom class - logo */
