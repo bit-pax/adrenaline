@@ -1,2 +1,2 @@
-# adrenaline
+# Adrenaline
 Adrenaline CSS framework
