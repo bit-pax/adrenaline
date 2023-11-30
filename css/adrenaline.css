@@ -598,6 +598,9 @@ nav li {
 nav ul:not(:only-of-type):last-child li {
   padding-left: 0.5rem;
 }
+#hamburger {
+  cursor: pointer;
+}
 /* custom class - logo */
 .logo {
   display: inline-block;
@@ -706,7 +709,6 @@ nav ul:not(:only-of-type):last-child li {
     position: static;
   }
 }
-/* custom class - auth */
 .auth {
   display: flex;
   align-items: center;
