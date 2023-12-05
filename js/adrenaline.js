@@ -1,25 +1,27 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', function() {
-    const hamburger = document.getElementById('hamburger');
-    const hamburgerUL = hamburger.closest('ul');
-    const menu = document.getElementById('menu');
+    const navTop = document.getElementById('nav-top');
+    const ul = navTop.querySelector('ul');
+    const hamburger = ul.querySelector('h1');
+
+    const navMenu = document.getElementById('nav-menu');
 
     updateHamburger();
 
     function updateHamburger() {
         if(window.innerWidth <= 830) { // small screen
-            hamburgerUL.style.display = 'flex';
-            menu.hidden = true;
+            ul.style.display = 'flex';
+            navMenu.hidden = true;
         }
         else { // wide screen
-            hamburgerUL.style.display = 'none';
-            menu.hidden = false;
+            ul.style.display = 'none';
+            navMenu.hidden = false;
         }
     }
 
     hamburger.addEventListener('click', function(e) {
-        menu.hidden = !menu.hidden;
+        navMenu.hidden = !navMenu.hidden;
     });
 
     window.addEventListener('resize', function(e) {

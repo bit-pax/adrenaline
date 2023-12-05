@@ -96,7 +96,7 @@ nav ul:not(:only-of-type):last-child li {
 
 /* custom class - menu */
 
-.menu ul {
+.nav-menu ul {
     margin: 0;
     padding: 0;
 
@@ -105,14 +105,14 @@ nav ul:not(:only-of-type):last-child li {
     // display: flex;
 }
 
-.menu li {
+.nav-menu li {
     flex: 1;
 
     // background: green;
     background: #fff;
 }
 
-.menu a {
+.nav-menu a {
     display: flex;
     align-items: center;
     // justify-content: center;
@@ -129,29 +129,29 @@ nav ul:not(:only-of-type):last-child li {
     // border: 1px solid red;
 }
 
-.menu a:hover {
+.nav-menu a:hover {
     text-decoration: none;
 }
 
-.menu a:not(:only-child):after {
+.nav-menu a:not(:only-child):after {
     content: '▾';
 }
 
 /* hover state */
 
-.menu li:hover > ul {
+.nav-menu li:hover > ul {
     display: block;
 }
 
 /* active state */
 
-.menu li:active > ul {
+.nav-menu li:active > ul {
     display: block;
 }
 
 /* sub menu */
 
-.menu li ul {
+.nav-menu li ul {
     flex-direction: column;
     
     position: absolute;
@@ -162,7 +162,7 @@ nav ul:not(:only-of-type):last-child li {
     display: none;
 }
 
-.menu li ul li {
+.nav-menu li ul li {
     width: 100%;
 
     background: #fff;
@@ -173,58 +173,58 @@ nav ul:not(:only-of-type):last-child li {
 @media (max-width: 830px) {
     /* general adjustments */
 
-    // .menu {
+    // .nav-menu {
     //     display: none;
     // }
 
-    // nav:has(input[type="checkbox"]:checked) .menu {
+    // nav:has(input[type="checkbox"]:checked) .nav-menu {
     //     display: none;
     // }
 
-    .menu nav-box {
+    .nav-menu nav-box {
         padding: 0;
 
         flex-direction: column;
     }
 
-    .menu ul {
+    .nav-menu ul {
         flex-wrap: wrap;
 
         border-bottom: 1px solid #E6E7E9;
     }
 
-    .menu li {
+    .nav-menu li {
         flex: 1 1 50%;
     }
 
-    .menu a {
+    .nav-menu a {
         justify-content: flex-start;
     }
 
-    .menu a:not(:only-child):after {
+    .nav-menu a:not(:only-child):after {
         order: 1;
         margin-left: auto;
     }
 
     /* custom adjustments */
     
-    // .menu ul:nth-last-of-type(1) { /* add margin to the top */
+    // .nav-menu ul:nth-last-of-type(1) { /* add margin to the top */
     //     margin-top: 0.65rem;
     // }
 
-    .menu ul:not(:first-child) { /* reverse the order of <ul> elements */
+    .nav-menu ul:not(:first-child) { /* reverse the order of <ul> elements */
         order: -1;
     }
 
-    .menu ul li {
+    .nav-menu ul li {
         padding: 0.65rem;
     }
 
-    .menu ul li input {
+    .nav-menu ul li input {
         width: 100%;
     }
 
-    .menu ul:first-child {
+    .nav-menu ul:first-child {
         // filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.15));
 
         /* box-shadow syntax: offset-x | offset-y | blur-radius | spread-radius | color */
@@ -235,13 +235,13 @@ nav ul:not(:only-of-type):last-child li {
 }
 
 @media (max-width: 400px) {
-    .menu li {
+    .nav-menu li {
         flex-basis: 100%;
     }
 
     /* sub menu */
 
-    .menu li ul {
+    .nav-menu li ul {
         position: static;
     }
 }
