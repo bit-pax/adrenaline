@@ -1,4 +1,5 @@
-input {
+input,
+select {
     // padding: 0.5rem 0.75rem;
     // height: 2.15rem;
     height: 2.454rem;
@@ -10,11 +11,13 @@ input {
     box-sizing: border-box;
 }
 
-input::placeholder {
+input::placeholder,
+select::placeholder {
     color: #929DB5;
 }
 
-input:focus {
+input:focus,
+select:focus {
     border-color: #90b5e2;
     outline: 0;
 
@@ -32,11 +35,14 @@ input[type="search"] {
 
 input[type=text],
 input[type=email],
-input[type=password] {
+input[type=password],
+select {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
 }
 
+
+/* checkbox */
 input[type=checkbox] {
     display: inline-block;
 
@@ -62,4 +68,14 @@ input[type="submit"] {
     border: 1px solid transparent;
     outline: none;
     box-shadow: none;
+}
+
+/* select/dropdown */
+select {
+    appearance: none;
+    background: url("../icons/chevron-down.svg") no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 16px;
+
+    padding-right: 2.25rem;
 }

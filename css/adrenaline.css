@@ -473,17 +473,20 @@ a[role="button"]:not(:disabled):hover,
   cursor: pointer;
   border-color: #b3b7bd;
 }
-input {
+input,
+select {
   height: 2.454rem;
   line-height: normal;
   border: 1px solid #e6e7e9;
   border-radius: 4px;
   box-sizing: border-box;
 }
-input::placeholder {
+input::placeholder,
+select::placeholder {
   color: #929DB5;
 }
-input:focus {
+input:focus,
+select:focus {
   border-color: #90b5e2;
   outline: 0;
   box-shadow: 0 0 transparent, 0 0 0 0.25rem rgba(32, 107, 196, 0.25);
@@ -498,10 +501,12 @@ input[type="search"] {
 }
 input[type=text],
 input[type=email],
-input[type=password] {
+input[type=password],
+select {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
+/* checkbox */
 input[type=checkbox] {
   display: inline-block;
   border-radius: 4px;
@@ -522,6 +527,14 @@ input[type="submit"] {
   border: 1px solid transparent;
   outline: none;
   box-shadow: none;
+}
+/* select/dropdown */
+select {
+  appearance: none;
+  background: url("../icons/chevron-down.svg") no-repeat;
+  background-position: right 0.5rem center;
+  background-size: 16px;
+  padding-right: 2.25rem;
 }
 code {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
