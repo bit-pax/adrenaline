@@ -611,7 +611,8 @@ nav li {
 nav ul:not(:only-of-type):last-child li {
   padding-left: 0.5rem;
 }
-#hamburger {
+.hamburger {
+  padding-right: 0.25rem;
   color: #206BC4;
   cursor: pointer;
 }

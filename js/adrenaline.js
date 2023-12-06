@@ -2,8 +2,8 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     const navTop = document.getElementById('nav-top');
-    const ul = navTop.querySelector('ul');
-    const hamburger = ul.querySelector('h1');
+    const ul = navTop.querySelector('ul'); // get first <ul> element
+    const hamburger = ul.querySelector('h1'); // get first <h1> element
 
     const navMenu = document.getElementById('nav-menu');
 
