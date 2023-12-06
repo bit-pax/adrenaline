@@ -620,16 +620,16 @@ nav ul:not(:only-of-type):last-child li {
   border-radius: 4px;
 }
 /* custom class - menu */
-.menu ul {
+.nav-menu ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.menu li {
+.nav-menu li {
   flex: 1;
   background: #fff;
 }
-.menu a {
+.nav-menu a {
   display: flex;
   align-items: center;
   /* width: 100%; */
@@ -639,74 +639,74 @@ nav ul:not(:only-of-type):last-child li {
   white-space: nowrap;
   color: #182433;
 }
-.menu a:hover {
+.nav-menu a:hover {
   text-decoration: none;
 }
-.menu a:not(:only-child):after {
+.nav-menu a:not(:only-child):after {
   content: '▾';
 }
 /* hover state */
-.menu li:hover > ul {
+.nav-menu li:hover > ul {
   display: block;
 }
 /* active state */
-.menu li:active > ul {
+.nav-menu li:active > ul {
   display: block;
 }
 /* sub menu */
-.menu li ul {
+.nav-menu li ul {
   flex-direction: column;
   position: absolute;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
   display: none;
 }
-.menu li ul li {
+.nav-menu li ul li {
   width: 100%;
   background: #fff;
 }
 /* media queries */
 @media (max-width: 830px) {
   /* general adjustments */
-  .menu nav-box {
+  .nav-menu nav-box {
     padding: 0;
     flex-direction: column;
   }
-  .menu ul {
+  .nav-menu ul {
     flex-wrap: wrap;
     border-bottom: 1px solid #E6E7E9;
   }
-  .menu li {
+  .nav-menu li {
     flex: 1 1 50%;
   }
-  .menu a {
+  .nav-menu a {
     justify-content: flex-start;
   }
-  .menu a:not(:only-child):after {
+  .nav-menu a:not(:only-child):after {
     order: 1;
     margin-left: auto;
   }
   /* custom adjustments */
-  .menu ul:not(:first-child) {
+  .nav-menu ul:not(:first-child) {
     /* reverse the order of <ul> elements */
     order: -1;
   }
-  .menu ul li {
+  .nav-menu ul li {
     padding: 0.65rem;
   }
-  .menu ul li input {
+  .nav-menu ul li input {
     width: 100%;
   }
-  .menu ul:first-child {
+  .nav-menu ul:first-child {
     /* box-shadow syntax: offset-x | offset-y | blur-radius | spread-radius | color */
     box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.1);
   }
 }
 @media (max-width: 400px) {
-  .menu li {
+  .nav-menu li {
     flex-basis: 100%;
   }
   /* sub menu */
-  .menu li ul {
+  .nav-menu li ul {
     position: static;
   }
 }
