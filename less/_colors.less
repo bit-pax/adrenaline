@@ -1,0 +1,152 @@
+// variable to switch between light and dark mode
+
+@mode: light; // light, dark, debug, etc.
+
+& when (@mode = dark) {
+    @bg: #141b2d;
+    @all-text-color: #e5e6ed;
+
+    @hr-color: #252f47;
+
+    @card-bg: #1f2941;
+    @card-border: #030614;
+
+    @btn-blue-bg: #5255b1;
+    @btn-blue-bg-hover: #686efc;
+
+    @btn-white-bg: #484d64;
+    @btn-white-bg-hover: #5f6c82;
+
+    @btn-text-color: #e7ede5;
+
+    @code-bg: #141b2d;
+
+    body {
+        background-color: @bg;
+        color: @all-text-color;
+    }
+
+    hr {
+        background-color: @hr-color;
+    }
+
+    card {
+        border: 1px solid @card-border;
+        background: @card-bg;
+    }
+
+    // buttons
+
+    a:not([class]) {
+        color: #686efc;
+    
+        &:hover {
+            color: #686efc;
+        }
+    }
+
+    button:not([class]), 
+    input[type="submit"], 
+    a[role="button"], 
+    .btn-blue {
+        background: @btn-blue-bg;
+        color: @btn-text-color;
+
+        &:not(:disabled):hover {
+            background: @btn-blue-bg-hover;
+        }
+    }
+
+    .btn-white {
+        border: 1px solid @btn-white-bg;
+        background: @btn-white-bg;
+        color: @btn-text-color;
+
+        &:not(:disabled):hover {
+            background: @btn-white-bg-hover;
+            border-color: @btn-white-bg-hover;
+        }
+    }
+
+    // inputs
+    
+    input,
+    select {
+        background-color: @bg;
+        border: 1px solid @hr-color;
+    }
+
+    input:focus,
+    select:focus {
+        border-color: #686efc;
+
+        box-shadow: 0 0 transparent, 0 0 0 0.25rem rgba(32, 107, 196, .0);
+    }
+
+    input[type="search"] {
+        background-color: @bg;
+    }
+
+    input[type=checkbox] {
+        background-color: @bg;
+    }
+
+    select {
+        color: @btn-text-color;
+    }
+
+    input[type=checkbox]:checked {
+        background-color: #686efc;
+    }
+
+    // code
+
+    code {
+        background: @code-bg;
+    }
+    
+    pre {
+        code {
+            border: 1px solid #182433;
+            background: #182433;
+            color: #FCFDFE;
+        }
+    }
+
+    // scrollbar
+
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 17px 17px @bg;
+    }
+
+    // navbar
+
+    .hamburger {
+        color: #e8ecf8;
+    }
+
+    .title {
+        color: #6b71f3;
+    }
+    
+    nav {
+        background: @card-bg;
+        border-bottom: 1px solid @hr-color;
+    }
+
+    .nav-menu ul {
+        border-bottom: 1px solid @hr-color;
+    }
+
+    .nav-menu li {
+        background: @card-bg;
+    }
+
+    .nav-menu a {
+        color: @btn-text-color;
+    }
+
+    .nav-menu li ul li {
+        background: @card-bg;
+    }
+}

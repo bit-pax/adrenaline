@@ -9,7 +9,7 @@
         <meta name="description" content="Test page filled with common HTML elements to help you see how goblin.css works.">
         <meta name="author" content="Howard Kim">
 
-        <link rel="stylesheet" href="css/adrenaline.css">
+        <link id="theme" rel="stylesheet" href="css/adrenaline.css">
         <link rel="stylesheet" href="prism/prism.css">
     </head>
 
@@ -26,13 +26,16 @@
                 <ul>
                     <!-- <li><a href="#"><img style="width: 2.15rem; height: 2.15rem; margin-right: 0.5rem;" src="https://i.imgur.com/TQAOVkU.jpeg"></a></li> -->
                     <!-- <li><a class="logo" style="background-image: url('https://i.imgur.com/TQAOVkU.jpeg');" href="#"></a></li> -->
-                    <li><h1 style="color: #206BC4;">Adrenaline</h1></li>
+                    <li><h1 class="title">Adrenaline</h1></li>
+                    <!-- <li><h1 style="color: #5c5fb2;">Adrenaline</h1></li> -->
+                    
 
                 </ul>
 
                 <ul>
                     <li><a href="https://github.com/bit-pax/adrenaline" class="btn-white">Github</a></li>
-                    <li><a href="css/adrenaline.min.css" class="btn-blue" download>Download</a></li>
+                    <!-- <li><a href="css/adrenaline.min.css" class="btn-blue" download>Download</a></li> -->
+                    <li><a class="toggle-dark-mode" onclick="toggleDarkMode();"><img id="mode" src="icons/moon.svg"></a></li>
                     <li><a class="profile" style="background-image: url('https://i.pravatar.cc/100');" href="#"></a></li>
                 </ul>
             </nav-box>

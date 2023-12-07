@@ -791,3 +791,97 @@ nav ul:not(:only-of-type):last-child li {
   width: 100%;
   margin: 1rem 0 0 0;
 }
+body {
+  background-color: #141b2d;
+  color: #e5e6ed;
+}
+hr {
+  background-color: #252f47;
+}
+card {
+  border: 1px solid #030614;
+  background: #1f2941;
+}
+a:not([class]) {
+  color: #686efc;
+}
+a:not([class]):hover {
+  color: #686efc;
+}
+button:not([class]),
+input[type="submit"],
+a[role="button"],
+.btn-blue {
+  background: #5255b1;
+  color: #e7ede5;
+}
+button:not([class]):not(:disabled):hover,
+input[type="submit"]:not(:disabled):hover,
+a[role="button"]:not(:disabled):hover,
+.btn-blue:not(:disabled):hover {
+  background: #686efc;
+}
+.btn-white {
+  border: 1px solid #484d64;
+  background: #484d64;
+  color: #e7ede5;
+}
+.btn-white:not(:disabled):hover {
+  background: #5f6c82;
+  border-color: #5f6c82;
+}
+input,
+select {
+  background-color: #141b2d;
+  border: 1px solid #252f47;
+}
+input:focus,
+select:focus {
+  border-color: #686efc;
+  box-shadow: 0 0 transparent, 0 0 0 0.25rem rgba(32, 107, 196, 0);
+}
+input[type="search"] {
+  background-color: #141b2d;
+}
+input[type=checkbox] {
+  background-color: #141b2d;
+}
+select {
+  color: #e7ede5;
+}
+input[type=checkbox]:checked {
+  background-color: #686efc;
+}
+code {
+  background: #141b2d;
+}
+pre code {
+  border: 1px solid #182433;
+  background: #182433;
+  color: #FCFDFE;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 17px 17px #141b2d;
+}
+.hamburger {
+  color: #e8ecf8;
+}
+.title {
+  color: #6b71f3;
+}
+nav {
+  background: #1f2941;
+  border-bottom: 1px solid #252f47;
+}
+.nav-menu ul {
+  border-bottom: 1px solid #252f47;
+}
+.nav-menu li {
+  background: #1f2941;
+}
+.nav-menu a {
+  color: #e7ede5;
+}
+.nav-menu li ul li {
+  background: #1f2941;
+}

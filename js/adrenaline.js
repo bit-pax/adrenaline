@@ -29,5 +29,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+var darkMode = false;
+
+function toggleDarkMode() {
+    darkMode = !darkMode;
+    
+    var theme = document.getElementById('theme');
+    var image = document.getElementById('mode');
+
+    if (darkMode) {
+        theme.href = "css/adrenaline-dark.css";
+        image.src = "icons/sun.svg";
+    } else {
+        theme.href = "css/adrenaline.css";
+        image.src = "icons/moon.svg";
+    }
+}
 
 
