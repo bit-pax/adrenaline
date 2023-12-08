@@ -15,7 +15,7 @@
 
     <body>
 
-        <div class="sticky">
+        <div id="nav-container" class="sticky">
             <nav id="nav-top">
                 <nav-box>
                     <ul>
@@ -1243,7 +1243,10 @@
 
                                 <!-- primarily used for having the navbar stick to the top at all times but can be used for any element -->
                                 .sticky
-                                
+
+                                <!-- used for automatically hiding/showing the navbar when user scrolls (typically used in conjunction with .sticky class)-->
+                                .nav-hide
+
                                 <!-- used for the navbar top which has the responsive hamburger button -->
                                 .nav-top
 

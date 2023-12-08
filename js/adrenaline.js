@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const navMenu = document.getElementById('nav-menu');
 
+    /* hamburger - toggle visibility */
+
     updateHamburger();
 
     function updateHamburger() {
@@ -28,6 +30,23 @@ document.addEventListener('DOMContentLoaded', function() {
         updateHamburger();
     });
 
+    /* nav-container - toggle visiblity on user scroll */
+
+    let navContainer = document.getElementById('nav-container');
+    let lastScrollTop = 0;
+
+    window.addEventListener('scroll', function() {
+        let st = window.scrollY;
+
+        if (st > lastScrollTop) {
+            navContainer.classList.add('nav-hide');
+        } 
+        else {
+            navContainer.classList.remove('nav-hide');
+        }
+
+        lastScrollTop = st <= 0 ? 0 : st;
+    }, false);
     
     /* smooth scrolling to different parts of the page for all anchor links whose href attribute starts with a '#' */
 
