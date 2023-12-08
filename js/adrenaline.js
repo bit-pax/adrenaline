@@ -1,15 +1,52 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', function() {
+    /* nav-container - toggle visiblity on user scroll */
+
+    let navContainer = document.getElementById('nav-container');
+    let lastScrollTop = 0;
+    let ignoreScroll = false;
+
+    window.addEventListener('scroll', function() {
+        let st = window.scrollY;
+
+        if (!ignoreScroll) {
+            if (st > lastScrollTop) {
+                navContainer.classList.add('nav-hide');
+            } 
+            else {
+                navContainer.classList.remove('nav-hide');
+            }
+        }
+
+        lastScrollTop = st <= 0 ? 0 : st;
+        ignoreScroll = false;
+    }, false);
+    
+    /* smooth scrolling to different parts of the page for all anchor links whose href attribute starts with a '#' */
+
+    document.addEventListener('click', function (event) {
+        if (!event.target.matches('a[href^="#"]')) return;
+        event.preventDefault();
+
+        ignoreScroll = true;
+
+        document.querySelector(event.target.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+
+    /* hamburger - init */
+
     const navTop = document.getElementById('nav-top');
     const ul = navTop.querySelector('ul'); // get first <ul> element
     const hamburger = ul.querySelector('h1'); // get first <h1> element
 
     const navMenu = document.getElementById('nav-menu');
 
-    /* hamburger - toggle visibility */
-
     updateHamburger();
+
+    /* hamburger - toggle visibility */
 
     function updateHamburger() {
         if(window.innerWidth <= 830) { // small screen
@@ -23,40 +60,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     hamburger.addEventListener('click', function(e) {
+        ignoreScroll = true;
         navMenu.hidden = !navMenu.hidden;
     });
 
     window.addEventListener('resize', function(e) {
         updateHamburger();
-    });
-
-    /* nav-container - toggle visiblity on user scroll */
-
-    let navContainer = document.getElementById('nav-container');
-    let lastScrollTop = 0;
-
-    window.addEventListener('scroll', function() {
-        let st = window.scrollY;
-
-        if (st > lastScrollTop) {
-            navContainer.classList.add('nav-hide');
-        } 
-        else {
-            navContainer.classList.remove('nav-hide');
-        }
-
-        lastScrollTop = st <= 0 ? 0 : st;
-    }, false);
-    
-    /* smooth scrolling to different parts of the page for all anchor links whose href attribute starts with a '#' */
-
-    document.addEventListener('click', function (event) {
-        if (!event.target.matches('a[href^="#"]')) return;
-        event.preventDefault();
-
-        document.querySelector(event.target.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
     });
 });
 
