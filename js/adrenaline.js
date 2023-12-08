@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let navContainer = document.getElementById('nav-container');
     let lastScrollTop = 0;
-    let ignoreScroll = false;
+    let ignoreScroll = false; // ignores scroll so navbar won't auto show/hide. typically used for anchor links, window resizing, etc.
 
     window.addEventListener('scroll', function() {
         let st = window.scrollY;
@@ -49,6 +49,8 @@ document.addEventListener('DOMContentLoaded', function() {
     /* hamburger - toggle visibility */
 
     function updateHamburger() {
+        ignoreScroll = true;
+
         if(window.innerWidth <= 830) { // small screen
             ul.style.display = 'flex';
             navMenu.hidden = true;
