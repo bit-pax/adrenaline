@@ -7,8 +7,7 @@
   margin: 0;
   padding: 0;
 }
-html,
-body {
+html {
   height: 100%;
 }
 img,
@@ -574,6 +573,11 @@ pre code {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   box-shadow: inset 0 0 17px 17px #CFD4DA;
+}
+/* generic class for positioning element at the top at all times - primarily used for navbar */
+.sticky {
+  position: sticky;
+  top: 0;
 }
 /* nav */
 nav {

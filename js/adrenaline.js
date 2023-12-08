@@ -27,7 +27,21 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('resize', function(e) {
         updateHamburger();
     });
+
+    
+    /* smooth scrolling to different parts of the page for all anchor links whose href attribute starts with a '#' */
+
+    document.addEventListener('click', function (event) {
+        if (!event.target.matches('a[href^="#"]')) return;
+        event.preventDefault();
+
+        document.querySelector(event.target.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
+
+/* toggle dark mode */
 
 var darkMode = false;
 

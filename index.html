@@ -5,8 +5,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Adrenaline.css Elements</title>
-        <meta name="description" content="Test page filled with common HTML elements to help you see how goblin.css works.">
+        <title>Adrenaline CSS</title>
+        <meta name="description" content="Demonstration of Adrenaline CSS framework functionality and documentation">
         <meta name="author" content="Howard Kim">
 
         <link id="theme" rel="stylesheet" href="css/adrenaline.css">
@@ -15,55 +15,58 @@
 
     <body>
 
-        <nav id="nav-top">
-            <nav-box>
-                <ul>
-                    <li>
-                        <h1 class="hamburger">☰</h1>
-                    </li>
-                </ul>
-
-                <ul>
-                    <!-- <li><a href="#"><img style="width: 2.15rem; height: 2.15rem; margin-right: 0.5rem;" src="https://i.imgur.com/TQAOVkU.jpeg"></a></li> -->
-                    <!-- <li><a class="logo" style="background-image: url('https://i.imgur.com/TQAOVkU.jpeg');" href="#"></a></li> -->
-                    <li><h1 class="title">Adrenaline</h1></li>
-                    <!-- <li><h1 style="color: #5c5fb2;">Adrenaline</h1></li> -->
+        <div class="sticky">
+            <nav id="nav-top">
+                <nav-box>
+                    <ul>
+                        <li>
+                            <h1 class="hamburger">☰</h1>
+                        </li>
+                    </ul>
+    
+                    <ul>
+                        <!-- <li><a href="#"><img style="width: 2.15rem; height: 2.15rem; margin-right: 0.5rem;" src="https://i.imgur.com/TQAOVkU.jpeg"></a></li> -->
+                        <!-- <li><a class="logo" style="background-image: url('https://i.imgur.com/TQAOVkU.jpeg');" href="#"></a></li> -->
+                        <li><h1 class="title">Adrenaline</h1></li>
+                        <!-- <li><h1 style="color: #5c5fb2;">Adrenaline</h1></li> -->
+                        
+    
+                    </ul>
+    
+                    <ul>
+                        <li><a href="https://github.com/bit-pax/adrenaline" class="btn-white">Github</a></li>
+                        <!-- <li><a href="css/adrenaline.min.css" class="btn-blue" download>Download</a></li> -->
+                        <li><a class="toggle-dark-mode" onclick="toggleDarkMode();"><img id="mode" src="icons/moon.svg"></a></li>
+                        <li><a class="profile" style="background-image: url('https://i.pravatar.cc/100');" href="#"></a></li>
+                    </ul>
+                </nav-box>
+            </nav>
+    
+            <nav id="nav-menu" class="nav-menu">
+                <nav-box>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#layout">Layout</a></li>
+                        <li><a href="#components">Components</a></li>
+                        <li><a href="#">Templates</a>
+                            <ul>
+                                <li><a href="#templates">Sign In</a></li>
+                                <li><a href="#createnewaccount">Create New Account</a></li>
+                                <li><a href="#forgot">Forgot Password</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#class">Classes</a></li>
+                        <li><a href="#purchase">Purchase</a></li>
+                    </ul>
                     
-
-                </ul>
-
-                <ul>
-                    <li><a href="https://github.com/bit-pax/adrenaline" class="btn-white">Github</a></li>
-                    <!-- <li><a href="css/adrenaline.min.css" class="btn-blue" download>Download</a></li> -->
-                    <li><a class="toggle-dark-mode" onclick="toggleDarkMode();"><img id="mode" src="icons/moon.svg"></a></li>
-                    <li><a class="profile" style="background-image: url('https://i.pravatar.cc/100');" href="#"></a></li>
-                </ul>
-            </nav-box>
-        </nav>
-
-        <nav id="nav-menu" class="nav-menu">
-            <nav-box>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#layout">Layout</a></li>
-                    <li><a href="#components">Components</a></li>
-                    <li><a href="#">Templates</a>
-                        <ul>
-                            <li><a href="#templates">Sign In</a></li>
-                            <li><a href="#createnewaccount">Create New Account</a></li>
-                            <li><a href="#forgot">Forgot Password</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#class">Classes</a></li>
-                    <li><a href="#purchase">Purchase</a></li>
-                </ul>
-                
-                <ul>
-                    <li><input id="search" type="search" value="" placeholder="Search…"></li>
-                </ul>
-            </nav-box>
-        </nav>
-
+                    <ul>
+                        <li><input id="search" type="search" value="" placeholder="Search…"></li>
+                    </ul>
+                </nav-box>
+            </nav>
+        </div>
+        
+    
         <header>
             <div>
                 <h6 id="about">ABOUT</h6>
@@ -1238,6 +1241,9 @@
                                 <!-- used for automatically styling Sign In, Sign Up, Forgot Password pages -->
                                 .auth
 
+                                <!-- primarily used for having the navbar stick to the top at all times but can be used for any element -->
+                                .sticky
+                                
                                 <!-- used for the navbar top which has the responsive hamburger button -->
                                 .nav-top
 
