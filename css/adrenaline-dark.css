@@ -762,9 +762,15 @@ nav ul:not(:only-of-type):last-child li {
 .auth card {
   padding: 2.5rem;
 }
-/* Div will always distribute the available space between or around the flex items depending on how many children it has.
-(Makes it convenient for having left and right elements. Or left, middle, right elements.) */
+.auth card form {
+  width: 100%;
+}
 .auth card div {
+  display: block;
+}
+/* Span will always distribute the available space between or around the flex items depending on how many children it has.
+(Makes it convenient for having left and right elements. Or left, middle, right elements.) */
+.auth card span {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -783,12 +789,12 @@ nav ul:not(:only-of-type):last-child li {
 }
 .auth label {
   display: inline-block;
-  padding: 1.5rem 0 0.5rem 0;
+  padding: 0.5rem 0 0.5rem 0;
   font-weight: 500;
   user-select: none;
 }
 .auth a {
-  padding: 1.5rem 0 0.5rem 0;
+  padding: 0.5rem 0 0.5rem 0;
   font-weight: 500;
 }
 .auth input:not([type=checkbox]) {
