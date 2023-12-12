@@ -753,7 +753,7 @@ nav ul:not(:only-of-type):last-child li {
   align-items: center;
   justify-content: center;
 }
-.auth div:first-child {
+.auth > div:first-child {
   width: 450px;
   /* outline-style:solid;
     outline-color:red;
@@ -798,7 +798,7 @@ nav ul:not(:only-of-type):last-child li {
   font-weight: 500;
 }
 .auth input:not([type=checkbox]) {
-  display: block;
+  display: inline-block;
   width: 100%;
 }
 .auth button {
