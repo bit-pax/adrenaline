@@ -117,6 +117,9 @@ hr {
   margin: 0 -1.5rem;
   margin-bottom: 1rem;
 }
+small {
+  color: #6C7A91;
+}
 img {
   height: auto;
   max-width: 100%;
@@ -150,6 +153,10 @@ header div:not(:only-of-type):last-child * {
 section header {
   margin-top: 0;
   padding: 0;
+}
+spread {
+  display: flex;
+  justify-content: space-between;
 }
 grid {
   display: flex;
@@ -249,6 +256,42 @@ footer {
   padding-top: 2rem;
   padding-bottom: 2rem;
   color: #667382;
+}
+/* adrenaline table */
+.table-border {
+  border: 1px solid #e5e8ec;
+  border-radius: 4px;
+  overflow: hidden;
+}
+table {
+  width: 100%;
+  min-width: 35rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+table tr {
+  border-bottom: 1px solid #e5e8ec;
+}
+table tr:nth-child(odd) {
+  background-color: #F6F8FB;
+}
+table tr:nth-child(even) {
+  background-color: #ffffff;
+}
+table tr:last-child {
+  border-bottom: none;
+}
+table th,
+table td {
+  border: none;
+  white-space: nowrap;
+  text-align: left;
+  padding: 0.75rem 0.5rem;
+  color: #6C7A91;
+}
+table th {
+  font-size: 0.625rem;
+  color: #6C8294;
 }
 @font-face {
   font-family: 'Inter';
@@ -454,6 +497,12 @@ a[role="button"]:not(:disabled):hover,
   cursor: pointer;
   background: #1c5fae;
 }
+button:not([class]):disabled,
+input[type="submit"]:disabled,
+a[role="button"]:disabled,
+.btn-blue:disabled {
+  background-color: #d2e1f3;
+}
 .btn-white {
   display: inline-block;
   height: auto;
@@ -471,6 +520,9 @@ a[role="button"]:not(:disabled):hover,
 .btn-white:not(:disabled):hover {
   cursor: pointer;
   border-color: #b3b7bd;
+}
+.btn-white:disabled {
+  color: #d2d4d8;
 }
 input,
 select {
@@ -555,30 +607,16 @@ pre code {
   line-height: 1.5rem;
   padding: 0.5rem 1rem;
 }
-/* width */
-::-webkit-scrollbar {
-  width: 17px;
-}
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 17px 17px #F1F5F9;
-  border: solid 5px transparent;
-}
-/* Handle */
-::-webkit-scrollbar-thumb {
-  box-shadow: inset 0 0 17px 17px #ADB3BC;
-  border: solid 5px transparent;
-  border-radius: 1rem;
-}
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  box-shadow: inset 0 0 17px 17px #CFD4DA;
+a-spread {
+  display: flex;
+  justify-content: space-between;
 }
 /* generic class for positioning element at the top at all times - primarily used for navbar */
 .sticky {
   position: sticky;
   top: 0;
   transition: top 0.3s ease-in-out;
+  z-index: 10000;
 }
 .nav-hide {
   top: -112px;
@@ -816,6 +854,24 @@ card {
   border: 1px solid #030614;
   background: #1f2941;
 }
+.table-border {
+  border: 1px solid #030614;
+}
+table tr {
+  border-bottom: 1px solid #252f47;
+}
+table tr:nth-child(odd) {
+  background-color: #141b2d;
+}
+table tr:nth-child(even) {
+  background-color: #1f2941;
+}
+table th {
+  color: #6C8294;
+}
+table td {
+  color: #6C7A91;
+}
 a:not([class]) {
   color: #686efc;
 }
@@ -835,6 +891,13 @@ a[role="button"]:not(:disabled):hover,
 .btn-blue:not(:disabled):hover {
   background: #686efc;
 }
+button:not([class]):disabled,
+input[type="submit"]:disabled,
+a[role="button"]:disabled,
+.btn-blue:disabled {
+  color: #6E7773;
+  background-color: #292B59;
+}
 .btn-white {
   border: 1px solid #484d64;
   background: #484d64;
@@ -843,6 +906,11 @@ a[role="button"]:not(:disabled):hover,
 .btn-white:not(:disabled):hover {
   background: #5f6c82;
   border-color: #5f6c82;
+}
+.btn-white:disabled {
+  border: 1px solid #242732;
+  color: #6E7773;
+  background-color: #242732;
 }
 input,
 select {
