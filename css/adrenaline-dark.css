@@ -582,10 +582,14 @@ input[type="submit"] {
 /* select/dropdown */
 select {
   appearance: none;
-  background: url("../icons/chevron-down.svg") no-repeat;
+  background: url("../icons/chevron-down.svg") no-repeat, #ffffff;
   background-position: right 0.5rem center;
   background-size: 16px;
+  font-size: 1rem;
   padding-right: 2.25rem;
+}
+select option {
+  background-color: #ffffff;
 }
 code {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
